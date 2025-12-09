@@ -260,3 +260,75 @@ input:focus, textarea:focus { outline: none; border-color: var(--neon-pink); box
     .toggle .line2 { opacity: 0; }
     .toggle .line3 { transform: rotate(45deg) translate(-5px, -6px); }
 }
+
+@media screen and (max-width: 600px) {
+
+  
+    #neuroCanvas {
+        width: 100vw !important;
+        height: 100vh !important;
+    }
+
+    
+    .intro-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+    }
+
+    .intro-text {
+        text-align: center;
+    }
+
+    
+    .profile-image {
+        width: 220px;
+        height: 220px;
+    }
+
+   
+    .intro-text h1 {
+        font-size: 2rem;
+    }
+
+    .glitch-header {
+        font-size: 1.8rem;
+    }
+
+    
+    .grid-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+  
+    .card-content {
+        padding: 1.3rem;
+    }
+
+    .tags span {
+        margin-top: 8px;
+        display: inline-block;
+    }
+
+    
+    .contact-form-container {
+        padding: 1.2rem;
+    }
+
+   
+    .neon-btn {
+        width: 100%;
+        text-align: center;
+        padding: 14px;
+    }
+
+    
+    .cursor-dot, 
+    .cursor-outline {
+        display: none !important;
+    }
+    html, body {
+        cursor: auto !important;
+    }
+}
