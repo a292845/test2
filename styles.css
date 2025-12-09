@@ -166,9 +166,21 @@ body {
 
 .card-content {
     padding: 2rem;
-    pointer-events: none;
     transform: translateZ(30px);
+    pointer-events: none;
 }
+
+.card-content a {
+    pointer-events: auto; 
+    color: var(--neon-cyan);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card-content a:hover {
+    text-shadow: 0 0 8px var(--neon-cyan);
+}
+
 
 .project-image {
     width: 100%;
