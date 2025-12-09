@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; script-src 'self' 'unsafe-inline';">
+    <title>Jhon Anthony A Costoy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+    <canvas id="neuroCanvas"></canvas>
+    <nav class="glass-panel">
+        <div class="logo">Alfie<span class="dot">.</span>DEV</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    <main>
+        <section id="about" class="hero">
+            <div class="content-wrapper hidden">
+                <p class="greeting">System Online...</p>
+                <div class="intro-container">
+                    <div class="intro-text">
+                        <h1>Hello, I'm Anthony</h1>
+                        <p class="bio">A student pursuing web development and diving into the world of cybersecurity. Passionate about creating secure digital experiences.</p>
+                        <button id="vision-btn" class="neon-btn vision-btn-cool"><i class="fas fa-eye"></i> My Future Vision</button>
+                        <p id="future-vision" class="future-vision hidden">In 5 years, I will be a master in cybersecurity and web development, leading innovative projects that secure the digital world. By 10 years, I will be a mentor, teaching the next generation of developers and security experts, fostering a community of passionate innovators. In 20 years, as I retire, I will continue to inspire through writing, speaking, and open-source contributions, leaving a lasting legacy of knowledge and creativity that empowers future generations to build a safer, more connected world.</p>
+                    </div>
+                    <div class="profile-pic">
+                        <img src="an.jpg" alt="Anthony Profile Picture" class="profile-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="section-pad">
+            <h2 class="section-title hidden">My Projects</h2>
+            <div class="grid-container">
+                <article class="glass-card project-card tilt-card hidden">
+                    <div class="card-content">
+                        <img src="website1.jpg" alt="Website Bio Project" class="project-image">
+                        <h3>01 // Website Bio</h3>
+                        <p>A personal bio website highlighting my background, skills, and achievements.</p>
+                        <div class="tags">
+                            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="glass-card project-card tilt-card hidden">
+                    <div class="card-content">
+                        <img src="schoolwebsite.jpg" alt="School Website Project" class="project-image">
+                        <h3><i class="fas fa-school"></i> 02 // School Website</h3>
+                        <p>An educational website for school information, resources, and student management.</p>
+                        <div class="tags">
+                            <span><i class="fab fa-react"></i> React</span><span><i class="fab fa-node-js"></i> Node.js</span><span><i class="fas fa-database"></i> MongoDB</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="glass-card project-card tilt-card hidden">
+                    <div class="card-content">
+                        <img src="discordbot.jpg" alt="Discord Security Bot Project" class="project-image">
+                        <h3>03 // Discord Security Bot</h3>
+                        <p>A Discord bot for server security, moderation, and automated threat detection.</p>
+                        <div class="tags">
+                            <span>Python</span><span>Discord.py</span><span>Security</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section id="contact" class="section-pad">
+            <div class="glass-card contact-form-container hidden">
+                <h2>Encrypted Channel</h2>
+                <form id="secureContactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Codename" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Secure Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" placeholder="Transmission Data..." required></textarea>
+                    </div>
+                    <button type="submit" class="neon-btn">Transmit</button>
+                    <p id="formStatus" class="status-msg"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="glass-panel">
+        <p>End of Line. &copy; 2025 Alfie.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
